@@ -1,3 +1,4 @@
+#' @export
 find_words <- function(text, word_list) {
 
   check_file <- function(check) {
@@ -13,6 +14,7 @@ find_words <- function(text, word_list) {
 }
 
 
+#' @export
 import_file <- function(filename) {
 
     text <- readr::read_file(filename)
@@ -21,6 +23,7 @@ import_file <- function(filename) {
 }
 
 
+#' @export
 find_cov <- function(text, pattern = "(?<!analysis of |an)covariance") {
 
     has_cov <- grepl(text,
